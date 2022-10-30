@@ -6,9 +6,9 @@
 .line01{
     transition: .23s;
     width: 75%;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: -5%;
+    margin-left: 10%; 
+    margin-right: 10%; 
+    margin-top: -5%; 
     height: 1px;
     background-color: aliceblue;
 }
@@ -17,16 +17,16 @@
     transition: 0.23s;
     margin-top: 29%;
     margin-left: 12.5%;
-    margin-right: 8%;
+    margin-right: 5%;
     width: 75%;
     height: 1px;
     background-color: aliceblue;
 }
 .line01-anim{
     transition: 0.4s;
+    margin-top: -10%;
     transform-origin: 100%;
-    margin-left: 0%;
-
+    margin-left: -2.5%;
     transform: rotate(-45deg);
     animation: rotateleft .5s ease;
 }
