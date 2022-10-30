@@ -9,7 +9,6 @@ function App() {
       <NavBar/>
       <Main/>
       <Highlighter/>
-      <Main/>
     </div>
   );
 }
