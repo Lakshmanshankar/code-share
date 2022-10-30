@@ -34,19 +34,19 @@ import { monokaiSublime } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
   
   return (
     <>
-    <div className='w-full h-auto bg-slate-600'>
+    <div className='w-full h-auto bg-black'>
     <div className="holder w-full flex justify-center flex-col items-center h-fit sm:flex-row">
-    <input type="color" name="colorpalte" id="color" className='w-10/12 sm:w-32 border-teal-300 borderless' placeholder='Color' onChange={setBackgroud}/>
-    <Select options={Options} defaultValue={lang} onChange={setLanguage} className='aurora sm:w-2/5 ml w-10/12 mt-2'></Select>
+    <input type="color" name="colorpalte" id="color" className='w-10/12 sm:w-32 border-teal-300 borderless sm:h-9 mt-1' placeholder='Color' onChange={setBackgroud}/>
+    <Select options={Options} defaultValue={lang} onChange={setLanguage} className='aurora sm:w-2/5 ml w-10/12 mt-2 '></Select>
     </div>
-    <div className="textArea flex justify-center m-3">
-      <textarea name="codeContainer" id="codeEngine" cols="30" rows="10" className=' bg-gray-500 sm:w-3/6 w-full' onChangeCapture={handleValueOnInput} placeholder="Enter your code and download it as image"></textarea>
+    <div className="textArea flex justify-center m-3 bg-black">
+      <textarea name="codeContainer" id="codeEngine" cols="25" rows="10" className='sm:w-3/6 w-11/12 textArea font-poppins bg-zinc-700 sm:text-xl rounded-md text-white text-lg' onChangeCapture={handleValueOnInput} placeholder="Enter your code and download it as image"></textarea>
     </div>
     </div>
     <div className=" flex justify-center">
-      <div className="printable" id='Printable'>
-    <div className="printable bg-black flex flex-col sm:py-16 sm:px-32 px-10 py-10" id='holderMain'>
-    <div className="headerPro h-7 min-w-min bg-black justify-between topround">
+      <div className="printable bg-black py-5" id='Printable'>
+     <div className="printable bg-black flex flex-col sm:py-16 sm:px-32 px-10 py-10 rounded-md" id='holderMain'>
+     <div className="headerPro h-7 min-w-min bg-black justify-between topround">
       <div className="dummyleft float-left">
       <div className="hldCont w-16 bg-transparent flex justify-between py-1">
       <div className="contianers-1 w-4 h-4 rounded-full bg-red-500 "></div>
@@ -69,41 +69,3 @@ export default Component;
 
 //Reference links
 //https://react-syntax-highlighter.github.io/react-syntax-highlighter/AVAILABLE_STYLES_HLJS.html#available-stylesheet-props
-
-
-
-/**
- * 
- * 
- *   const codeString = `import react from react \nexport default function App(){\n 
-    return
-    <>
-    hello world from react
-    <>
-    }\n`
-
-    const pycode=`def fooo():
-        return None
-    class A:
-        def __nint__(self):
-            pass
-`
-
-    const dockerfile=`
-    RUN ubuntu:latest
-    WORKDIR . .
-    CMD ['echo','hello']
-    
-
-       <SyntaxHighlighter language="python" style={monokaiSublime} showLineNumbers={true} wrapLines={true}>
-      {pycode}
-    </SyntaxHighlighter>
-    <SyntaxHighlighter language='javascript' style={irBlack} showLineNumbers={true} wrapLongLines={true}>
-    {codeString}
-    </SyntaxHighlighter>
-
-    <SyntaxHighlighter language='dockerfile' style={irBlack} showLineNumbers={true} wrapLongLines={true}>
-    {dockerfile}
-    </SyntaxHighlighter>
-    `
- */

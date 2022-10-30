@@ -10,7 +10,7 @@ export default function Main() {
   `
   return (
     <div>
-      <main className="w-full py-10 bg-slate-50 flex justify-center items-center">
+      <main className="w-full py-10 bg-slate-50 flex justify-center items-center" id='home'>
         <section className=' w-10/12 py-5 bg-neutral-900 text-2xl px-2 rounded-lg sm:h-5/6 sm:py-32 shadow-md'>
             <div className="sm:w-11/12">
             <div className="header text-4xl text-red-600 font-extrabold py-5 gradientV sm:text-8xl sm:ml-10">Code and Share</div>
@@ -20,8 +20,8 @@ export default function Main() {
                <br></br>
                Code share supports modern programming languages
             </div>
-            <div className="plate py-5">
-                <button className='px-10 w-56 bg-red-600 font-poppins ml-5 sm:ml-10 py-2 rounded-md hover:transition-all hover:bg-pink-600 hover:text-slate-50'>Source</button>
+            <div className="plate py-5 flex justify-center">
+                <button className='px-10 w-56 bg-red-600 font-poppins sm:ml-10 py-2 rounded-md hover:transition-all hover:bg-pink-600 hover:text-slate-50'><a href='https://github.com/Lakshmanshankar/code-share'>Source</a></button>
             </div>
             </div>
             <div className="hidden sm:flex sm:float-right sm:ml-72 makeabsolute">

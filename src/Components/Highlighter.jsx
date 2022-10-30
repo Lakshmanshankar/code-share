@@ -27,11 +27,11 @@ export default class Highlighter extends Component {
     };
   render() {
     return (
-      <div id='code' className='code flex justify-center flex-col items-center m-0 p-0'>
-        <div className="printable" ref={this.download}>
-        <button className=' w-32 h-10 bg-amber-300' onClick={()=>{this.exportAsImage(document.getElementById('Printable'),"text")}}>Download</button>
-        <Compoent/>
+      <div id='code'className='code flex justify-center flex-col items-center m-0 p-0 bg-black py-0'>
+        <div className="printable flex justify-center flex-row w-full bg-transparent py-2" ref={this.download}>
+        <button className='bg-red-600 font-poppins px-20 py-3 text-2xl rounded-xl text-white hover:bg-pink-600' onClick={()=>{this.exportAsImage(document.getElementById('Printable'),"text")}}>Download</button>
         </div>
+        <Compoent/>
       </div>
     )
   }
