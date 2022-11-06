@@ -11,7 +11,7 @@ This is a React Tailwind application where you can create the beautiful images f
 
 Still Developing 
 
-## Want to Contribute
+## Local Installation run the below commands
 
 ```sh
 git clone https://github.com/Lakshmanshankar/code-share.git
