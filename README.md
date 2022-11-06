@@ -18,6 +18,10 @@ git clone https://github.com/Lakshmanshankar/code-share.git
 
 ```
 
+```sh
+cd code-share
+```
+
 Install the Packages (This may take a while)
 
 ```sh
