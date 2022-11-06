@@ -18,6 +18,8 @@ git clone https://github.com/Lakshmanshankar/code-share.git
 
 ```
 
+Now CD into the directory 
+
 ```sh
 cd code-share
 ```
