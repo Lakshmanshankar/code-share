@@ -30,3 +30,18 @@ Run on local Environment
 npm start
 
 ```
+
+
+If you want to use this as docker container 
+pull the docker images
+
+```sh
+docker pull lakshmanshankar/code-share
+```
+
+Up the docker Container by using the below command
+
+```sh
+
+docker run -it lakshmanshankar/code-share:v1 -p 3001:3000
+```
