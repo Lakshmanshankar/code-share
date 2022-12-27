@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Noto+Serif:wght@700&family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+  background: black;
+}
+.hideMe{
+  background: linear-gradient(to right, rgb(0, 238, 255), rgb(255, 0, 128)); /* Set the initial gradient */
+  background-size: 200% 100%; /* Increase the size of the gradient */
+  animation: gradient 5s ease ; 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.2s;
+  transform: scale3d(1.4);
+}
+.gradientShadow{
+  padding: 1.5px;
+  background: linear-gradient(to right, rgb(0, 238, 255), rgb(255, 0, 128), rgb(231, 210, 22), rgb(0, 248, 95)); /* Set the initial gradient */
+  background-size: 200% 100%; /* Increase the size of the gradient */
+  animation: gradient 5s ease infinite alternate; 
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%; /* Set the starting position of the gradient */
+  }
+  50% {
+
+    background-position: 100% 50%; /* Shift the gradient to the right */
+  }
+  100% {
+   
+    background-position: 0% 50%; /* Shift the gradient back to the left */
+  }
+}
+.slideIn{
+  transition: 1.5s;
+  transform: scale(1.5);
+}
+.slideDown{
+  transition: 1.5s;
+  transform: translateY(25%);
+}
