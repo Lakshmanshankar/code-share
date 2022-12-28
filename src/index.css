@@ -42,3 +42,20 @@ body{
   transition: 1.5s;
   transform: translateY(25%);
 }
+.isChecked{
+  width: 20px;
+  height: 20px;
+  accent-color: red;
+}
+
+.Program{
+  min-height: 20px;
+  padding-top: 32px;
+
+}
+
+.wrapperOne{
+  margin-top:30px;
+  position: absolute;
+  margin-left: 20px;
+}
