@@ -210,7 +210,7 @@ export default class Highlighter extends Component {
                   <div className="contianers-2 w-5 h-5 ml-2 rounded-full bg-amber-500"></div>
                   <div className="contianers-3 w-5 h-5 ml-2 rounded-full bg-green-600"></div>
               </span>
-                <SyntaxHighlighter language={this.state.languagec} style={this.state.theme} showLineNumbers={this.state.lineNumbers} wrapLongLines={true} className="Program py-6 rounded-xl"    customStyle={{
+                <SyntaxHighlighter language={this.state.language} style={this.state.theme} showLineNumbers={this.state.lineNumbers} wrapLongLines={true} className="Program py-6 rounded-xl"    customStyle={{
                       backgroundColor: "rgba(0,0,0,0.4)",
                       opacity: "1",
                       marginTop: "1rem",
