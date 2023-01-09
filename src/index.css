@@ -59,3 +59,16 @@ body{
   position: absolute;
   margin-left: 20px;
 }
+
+.ownBorder{
+  border: 0px solid firebrick;
+  border-width: 0px;
+  border-radius: 5px;
+}
+
+.react-select-container{
+  background: rgb(255, 183, 183);
+}
+.react-select{
+  background: black;
+}
